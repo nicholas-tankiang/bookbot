@@ -3,8 +3,9 @@ from word_counter import *
 def main():
     path_to_file = "books/frankenstein.txt"
 
-    text = get_book_path(path_to_file)
-    print(text)
+    # text = get_book_path(path_to_file)
+    # print(text)
+    print(count_words(path_to_file))
 
 # return read of given path
 def get_book_path(path):
