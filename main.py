@@ -1,6 +1,8 @@
+from word_counter import *
+
 def main():
     path_to_file = "books/frankenstein.txt"
-    
+
     text = get_book_path(path_to_file)
     print(text)
 
