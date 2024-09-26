@@ -21,3 +21,14 @@ def count_words(path):
         # for testing:
         # print(word_count)
     return word_count
+
+def count_char(path):
+    letters = "abcdefghijklmnopqrstuvwxyz"
+    char_dict = {}
+
+    for letter in list(get_text(path)):
+        if letter.lower() in list(letters):
+            char_dict[letter.lower()] = char_dict.get(letter.lower(),0) + 1
+    return char_dict
+
+print(count_char(path))
